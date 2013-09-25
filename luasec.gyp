@@ -28,11 +28,11 @@
       'direct_dependent_settings': {
       },
       'copies': [
-        { 'destination': '<(PRODUCT_DIR)/lua',
+        { 'destination': '<(PRODUCT_DIR)',
           'files': [
             'src/ssl.lua'
         ]},
-        { 'destination': '<(PRODUCT_DIR)/lua/ssl',
+        { 'destination': '<(PRODUCT_DIR)/ssl',
           'files': [
             'src/https.lua'
         ]},
