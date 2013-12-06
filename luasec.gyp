@@ -7,6 +7,7 @@
     {
       'target_name': 'luasec',
       'type': 'shared_library',
+      'product_dir': "<(PRODUCT_DIR)",
       'product_name': 'ssl',
       'sources': [
         'src/x509.c',
@@ -39,6 +40,8 @@
       ],  
       'conditions': [
         ['OS!="win"', {
+          'product_prefix': '',
+          'cflags!': ['-fvisibility=hidden'],
           'sources': [
             'src/luasocket/usocket.c'
           ],
